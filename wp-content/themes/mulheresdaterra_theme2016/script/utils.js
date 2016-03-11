@@ -195,6 +195,20 @@ $(function() {
 		closeEffect	: 'none'
 	});
 
+	// Video Play/Pause
+	var homeVideo = $('.home_video'); 
+    if (homeVideo.get(0).paused) {
+    	$(this).addClass('pause');
+    }
+
+	$('.playPause').click(function(){
+    	$(this).toggleClass('pause');
+
+	    if (homeVideo.get(0).paused) 
+	        homeVideo.get(0).play(); 
+	    else 
+	        homeVideo.get(0).pause();
+	})
 });
 	
 $(window).scroll(function () {
@@ -208,11 +222,42 @@ $(window).scroll(function () {
 		if (topPage >= 0 && topPage < video_height){
 	  		$('body').addClass('header_normal');
 	  		$('body').removeClass('header_extended');
+		}else if (topPage < 0){
+	  		$('body').addClass('header_normal');
+	  		$('body').removeClass('header_extended');
 		}else {
 			$('body').addClass('header_extended');
 			$('body').removeClass('header_normal');
 		}
-	}
+function isScrolledIntoView(elem)
+{
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+var block_documentario = $('.block_documentario');
+var block_as_mulheres = $('.block_as-mulheres');
+var block_colabore = $('.block_colabore');
+if(isScrolledIntoView(block_documentario)){
+	$('#bgsection').removeClass("as_mulheres");
+	$('#bgsection').removeClass("colabore");
+	$('#bgsection').addClass("documentario");
+}else if(isScrolledIntoView(block_as_mulheres)){
+	$('#bgsection').removeClass("documentario");
+	$('#bgsection').removeClass("colabore");
+	$('#bgsection').addClass("as_mulheres");
+}else if(isScrolledIntoView(block_colabore))
+	$('#bgsection').removeClass("documentario");
+	$('#bgsection').removeClass("as_mulheres");
+	$('#bgsection').addClass("colabore");
+}
 });
 
 })(jQuery, this);

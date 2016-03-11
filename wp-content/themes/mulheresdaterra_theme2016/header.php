@@ -39,6 +39,7 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 
 		<section class="general">
+			<section id="bgsection"></section>
 			<span data-scroll-index="1" class="target" id="projeto"> </span>
 
 <?php if ( is_home() ) : ?>
@@ -53,14 +54,17 @@
 <!-- 			<div style="width: auto; height: 100%;" data-vide-bg="mp4: http://mulheresdaterra.com.br/wp/wp-content/uploads/2016/03/mulheresdaterra_02.mp4, webm: http://mulheresdaterra.com.br/wp/wp-content/uploads/2016/03/mulheresdaterra_01.webm" data-vide-options="loop: true, muted: true, position: 0% 0%"></div>
  -->
 			<div class="video_wpr"> 
-			  <video autoplay muted loop>
+			  <video class="home_video" id="video1" autoplay muted loop>
 			    <source src="http://mulheresdaterra.com.br/wp/wp-content/uploads/2016/03/mulheresdaterra_02.mp4" type="video/mp4">
 			    <source src="http://mulheresdaterra.com.br/wp/wp-content/uploads/2016/03/mulheresdaterra_01.webm" type="video/webm">
 			  </video>
+				<button class="playPause btn"></button> 
 			</div> 
 
 
 			<div class="text"><?php postContent(7); ?></div>
+
+
 		</section>
 		<!-- END video -->
 <?php endif; ?>

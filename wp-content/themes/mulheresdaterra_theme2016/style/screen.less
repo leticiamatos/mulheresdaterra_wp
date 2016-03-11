@@ -292,6 +292,19 @@ section.home_cntt{
       width: 100%;
       display: block;
     }
+    .playPause{
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+      background: #f00;
+      height: 40px;
+      width: 40px;
+      border: none;
+      background: url(../img/ico-videocontrol.png) center right;
+    }
+    .playPause.pause{
+      background: url(../img/ico-videocontrol.png) center left;
+    }
   }
   .text{
     position: absolute;
@@ -699,6 +712,7 @@ section.block_galeria{
 /* As histórias */
 .block_as-historias{
   padding-bottom: 60px;
+  background-color: @cW;
 
   .block_cntt{
     padding-left: 50px;
@@ -764,10 +778,10 @@ section.block_galeria{
   .post-categories{
     font-size: 13px;
     text-transform: uppercase;
-    .cat_mulheres,
-    li:nth-of-type(2){
-      display:none;
-    }
+    // .cat_mulheres,
+    // li:nth-of-type(2){
+    //   display:none;
+    // }
   }
   .post_img{
     height: 170px;
