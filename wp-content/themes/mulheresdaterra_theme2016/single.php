@@ -48,7 +48,9 @@
 
 		<section class="single_footer">
 			<div class="newsletter_form">
-				<form>
+				<?php echo do_shortcode('[mc4wp_form id="164"]'); ?>
+
+				<!-- <form>
 					<div class="col_resp col1-2 label">
 						<label>Conheça mais histórias. Assine nossa newsletter.</label>
 					</div>
@@ -56,7 +58,7 @@
 						<input type="text" class="txt" placeholder="seu email" />
 						<input type="submit" class="btn" value="assinar" />
 					</div>
-				</form>
+				</form>-->
 				<span class="clear"></span>
 			</div>
 			<div class="face_comments col_resp col2-3">

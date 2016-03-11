@@ -844,14 +844,23 @@ a:hover, .btn:hover{
     }
   }
 }
+  #bgsection.reach_top{
+    background-color: #fff;
+    background-image: none;
+  }
   #bgsection.as-mulheres,
   #bgsection.documentario,
   #bgsection.colabore{
-    background-size: cover;
-    -webkit-background-size: auto;
-    background-position: auto;
-    -webkit-background-position: auto;
+    background-size:  auto 100%;
   }
+  body.vertical{
+    #bgsection.as-mulheres,
+    #bgsection.documentario,
+    #bgsection.colabore{
+      background-size: 100% auto ;
+    }
+  }
+
   #bgsection{
     height: 100%;
     width: 100%;
@@ -859,16 +868,17 @@ a:hover, .btn:hover{
     top: 0;
     left: 0;
     z-index: 0;
+    // z-index: 30;
   }
   // #bgsection.colabore{
   //   background: #0f0;
   // }
-  #bgsection.documentario{
-    background: #555;
-  }
-  #bgsection.as_mulheres{
-    background: #000;
-  }
+  // #bgsection.documentario{
+  //   background: #555;
+  // }
+  // #bgsection.as_mulheres{
+  //   background: #000;
+  // }
 
 // Exceção mapa
 @media screen and (max-width: 399px){

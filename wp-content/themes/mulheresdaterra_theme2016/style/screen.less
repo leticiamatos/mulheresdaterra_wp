@@ -289,10 +289,13 @@ section.home_cntt{
   .video_wpr{
     width: 100%;
     video{
+      position: relative;
+      z-index: 3;
       width: 100%;
       display: block;
     }
     .playPause{
+      z-index: 5;
       position: absolute;
       bottom: 20px;
       left: 10px;
@@ -317,6 +320,7 @@ section.home_cntt{
     padding: 0 3%;
     text-align: center;
     color: @cW;
+    z-index: 4;
     .h5_txtshadow;
   }
 }
@@ -1215,7 +1219,15 @@ body.single{
   }
   .single_footer{
     padding-top: 50px;
-
+    .mc4wp-alert{
+      clear: both;
+      color: @cY;
+      display: block;
+      font-size: 14px;
+      font-style: italic;
+      padding: 5px;
+      text-align: center;
+    }
     .newsletter_form{
       background: @cBrown;
       padding: 10px;

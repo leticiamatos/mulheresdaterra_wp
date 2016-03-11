@@ -39,10 +39,12 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 
 		<section class="general">
-			<section id="bgsection" class="as-mulheres"></section>
 			<span data-scroll-index="1" class="target" id="projeto"> </span>
 
 <?php if ( is_home() ) : ?>
+	<!-- Parallax BG effect -->
+		<section id="bgsection" class="as-mulheres"></section>
+
 		<!-- BEGIN video -->
 		<section class="block_wpr home_cntt">
 

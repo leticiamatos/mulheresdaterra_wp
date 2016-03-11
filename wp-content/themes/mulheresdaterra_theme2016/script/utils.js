@@ -201,6 +201,10 @@ $(function() {
     if (homeVideo.get(0).paused) {
     	$(this).addClass('pause');
     }
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (iOS){
+    	$('.playPause').addClass('pause');
+    }
 
 	$('.playPause').click(function(){
     	$(this).toggleClass('pause');
@@ -245,21 +249,31 @@ $(window).scroll(function () {
 			var block_colabore_03 = $('#colabore_03');
 			
 			if( isScrolledIntoView(block_as_mulheres_01) || isScrolledIntoView(block_as_mulheres_02) || isScrolledIntoView(block_as_mulheres_03) ){
-				console.log('mulheres!');
+				// console.log('mulheres!');
+				$('#bgsection').removeClass("reach_top");
 				$('#bgsection').removeClass("documentario");
 				$('#bgsection').removeClass("colabore");
 				$('#bgsection').addClass("as-mulheres");
+
 			}else if( isScrolledIntoView(block_documentario_01) || isScrolledIntoView(block_documentario_02) || isScrolledIntoView(block_documentario_03) ){
-				console.log('documentário!');
+				// console.log('documentário!');
+				$('#bgsection').removeClass("reach_top");
 				$('#bgsection').removeClass("as-mulheres");
 				$('#bgsection').removeClass("colabore");
 				$('#bgsection').addClass("documentario");
 			
 			}else if( isScrolledIntoView(block_colabore_01) || isScrolledIntoView(block_colabore_02) || isScrolledIntoView(block_colabore_03)){
-				console.log('colabore!');
-				$('#bgsection').removeClass("documentario");
+				// console.log('colabore!');
+				$('#bgsection').removeClass("reach_top");
 				$('#bgsection').removeClass("as-mulheres");
+				$('#bgsection').removeClass("documentario");
 				$('#bgsection').addClass("colabore");
+
+			}else if($(window).scrollTop() < 0){
+				$('#bgsection').removeClass("as-mulheres");
+				$('#bgsection').removeClass("documentario");
+				$('#bgsection').removeClass("colabore");
+				$('#bgsection').addClass("reach_top");
 			}
 		}
 		isVisible();
