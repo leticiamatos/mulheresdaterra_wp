@@ -117,6 +117,7 @@ function getWindowHeight(){
 	return video_height;
 }
 
+
 $(function() {
 
 	// Vertical Scrolling Navigation
@@ -208,7 +209,8 @@ $(function() {
 	        homeVideo.get(0).play(); 
 	    else 
 	        homeVideo.get(0).pause();
-	})
+	});
+
 });
 	
 $(window).scroll(function () {
@@ -216,6 +218,52 @@ $(window).scroll(function () {
 	// menu effect
 	if ( $('body').hasClass('home')){
 
+		function isScrolledIntoView(elem){
+		    var $elem = $(elem);
+		    var $window = $(window);
+
+		    var docViewTop = $window.scrollTop();
+		    var docViewBottom = docViewTop + $window.height();
+
+		    var elemTop = $elem.offset().top;
+		    var elemBottom = elemTop + $elem.height();
+
+		    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+		}
+		function isVisible(){
+
+			var block_as_mulheres_01 = $('#asmulheres_01');
+			var block_as_mulheres_02 = $('#asmulheres_02');
+			var block_as_mulheres_03 = $('#asmulheres_03');
+			
+			var block_documentario_01 = $('#documentario_01');
+			var block_documentario_02 = $('#documentario_02');
+			var block_documentario_03 = $('#documentario_03');
+
+			var block_colabore_01 = $('#colabore_01');
+			var block_colabore_02 = $('#colabore_02');
+			var block_colabore_03 = $('#colabore_03');
+			
+			if( isScrolledIntoView(block_as_mulheres_01) || isScrolledIntoView(block_as_mulheres_02) || isScrolledIntoView(block_as_mulheres_03) ){
+				console.log('mulheres!');
+				$('#bgsection').removeClass("documentario");
+				$('#bgsection').removeClass("colabore");
+				$('#bgsection').addClass("as-mulheres");
+			}else if( isScrolledIntoView(block_documentario_01) || isScrolledIntoView(block_documentario_02) || isScrolledIntoView(block_documentario_03) ){
+				console.log('documentário!');
+				$('#bgsection').removeClass("as-mulheres");
+				$('#bgsection').removeClass("colabore");
+				$('#bgsection').addClass("documentario");
+			
+			}else if( isScrolledIntoView(block_colabore_01) || isScrolledIntoView(block_colabore_02) || isScrolledIntoView(block_colabore_03)){
+				console.log('colabore!');
+				$('#bgsection').removeClass("documentario");
+				$('#bgsection').removeClass("as-mulheres");
+				$('#bgsection').addClass("colabore");
+			}
+		}
+		isVisible();
+	
 		var topPage = $(this).scrollTop();
 	 	var video_height = $('.video_wpr').height();
 
@@ -229,35 +277,10 @@ $(window).scroll(function () {
 			$('body').addClass('header_extended');
 			$('body').removeClass('header_normal');
 		}
-function isScrolledIntoView(elem)
-{
-    var $elem = $(elem);
-    var $window = $(window);
 
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
 
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
-var block_documentario = $('.block_documentario');
-var block_as_mulheres = $('.block_as-mulheres');
-var block_colabore = $('.block_colabore');
-if(isScrolledIntoView(block_documentario)){
-	$('#bgsection').removeClass("as_mulheres");
-	$('#bgsection').removeClass("colabore");
-	$('#bgsection').addClass("documentario");
-}else if(isScrolledIntoView(block_as_mulheres)){
-	$('#bgsection').removeClass("documentario");
-	$('#bgsection').removeClass("colabore");
-	$('#bgsection').addClass("as_mulheres");
-}else if(isScrolledIntoView(block_colabore))
-	$('#bgsection').removeClass("documentario");
-	$('#bgsection').removeClass("as_mulheres");
-	$('#bgsection').addClass("colabore");
-}
+	}
 });
 
 })(jQuery, this);
