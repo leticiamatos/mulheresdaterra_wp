@@ -84,6 +84,7 @@ body{
 }
 .block_cntt{
   position: relative;
+  z-index: 1;
   .width_center;
   max-width: @maxwidth;
 }
@@ -288,10 +289,12 @@ section.home_cntt{
 
   .video_wpr{
     width: 100%;
+    height: auto;
     video{
       position: relative;
       z-index: 3;
       width: 100%;
+      height: auto;
       display: block;
     }
     .playPause{
@@ -299,7 +302,7 @@ section.home_cntt{
       position: absolute;
       bottom: 20px;
       left: 10px;
-      background: #f00;
+      //background: #f00;
       height: 40px;
       width: 40px;
       border: none;
@@ -327,7 +330,7 @@ section.home_cntt{
 
 /* As mulheres */
 .block_as-mulheres{
-  background-size: cover;
+  //background-size: cover;
   padding-bottom: 80px;
 
   .block_cntt{
@@ -571,7 +574,7 @@ section.block_as-mulheres-fotos{
 
 /* Documentário */
 section.block_documentario{
-  background-size: cover;
+  //background-size: cover;
   padding-bottom: 15%; 
   
   .col1-2{
@@ -720,7 +723,16 @@ section.block_galeria{
   background: transparent;
   position: relative;
   z-index: 100;
+  //background-color: #00f;
 }
+.trigger_01{
+  top: -100px;
+}
+.trigger_03{
+  bottom: -100px;
+}
+
+
 /* As histórias */
 .block_as-historias{
   padding-bottom: 60px;
@@ -878,7 +890,7 @@ section.block_nos{
 
 /* Colabore */
 section.block_colabore{
-  background-size: cover;
+  // background-size: cover;
 
   padding-bottom: 70px;
 

@@ -2,18 +2,18 @@
 
 
 <!-- BEGIN As Mulheres -->
-<span class="trigger" id="asmulheres_01"></span>
+<span class="trigger trigger_01" id="asmulheres_01"></span>
 <section class="block_wpr block_as-mulheres">
 	<div class="block_cntt">
 		<h2 class="page_title col_resp"><?php postTitle($pg_mulh); ?></h2>
-		<span class="trigger" id="asmulheres_02"></span>
+		<span class="trigger trigger_02" id="asmulheres_02"></span>
 		<div class="page_text col_resp col1-2"><?php postContent( $pg_mulh); ?>
 			<p></p>
 		</div>
 		<span class="clear"></span>
 	</div>
 </section>
-<span class="trigger" id="asmulheres_03"></span>
+<span class="trigger trigger_03" id="asmulheres_03"></span>
 <!-- END As Mulheres -->
 
 <!-- BEGIN Mapa -->
@@ -122,12 +122,12 @@
 <!-- END As Mulheres Fotos -->
 
 <!-- BEGIN Documentário -->
-<span class="trigger" id="documentario_01"></span>
+<span class="trigger trigger_01" id="documentario_01"></span>
 <section class="block_wpr block_documentario">
 	<span data-scroll-index="2" class="target" id="documentario"> </span>
 	<div class="block_cntt">
 		<h2 class="page_title col_resp col1-2"><?php postTitle( $pg_docm); ?></h2>
-		<span class="trigger" id="documentario_02"></span>
+		<span class="trigger trigger_02" id="documentario_02"></span>
 		<div class="page_text col_resp col1-2">
 			<?php postContent( $pg_docm); ?>
 		</div>
@@ -137,7 +137,7 @@
 		</div>
 	</div>
 </section>
-<span class="trigger" id="documentario_03"></span>
+<span class="trigger trigger_03" id="documentario_03"></span>
 <!-- END Documentário -->
 
 <!-- BEGIN Quote -->
@@ -439,18 +439,18 @@
 <!-- END Nós -->
 
 <!-- BEGIN Colabore -->
-<span class="trigger" id="colabore_01"></span>
+<span class="trigger trigger_01" id="colabore_01"></span>
 <section class="block_wpr block_colabore">
 	<div class="block_cntt">
 		<h2 class="page_title col_resp col1-3"><?php postTitle($pg_colb); ?></h2>
-		<span class="trigger" id="colabore_02"></span>
+		<span class="trigger trigger_02" id="colabore_02"></span>
 		<div class="page_text col_resp col1-3"><?php postContent($pg_colb); ?></div>
 		<div class="button">
 			<a data-scroll-nav="6" class="more">Fale Conosco</a>
 		</div>
 	</div>
 </section>
-<span class="trigger" id="colabore_03"></span>
+<span class="trigger trigger_03" id="colabore_03"></span>
 <!-- END Colabore -->
 
 <!-- BEGIN Parceiros -->

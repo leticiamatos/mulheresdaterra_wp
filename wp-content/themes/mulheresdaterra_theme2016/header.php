@@ -43,7 +43,12 @@
 
 <?php if ( is_home() ) : ?>
 	<!-- Parallax BG effect -->
-		<section id="bgsection" class="as-mulheres"></section>
+		<section id="bgsection" class="as-mulheres">
+			<div class="bg_reach_top"></div>
+			<div class="bg_as-mulheres"></div>
+			<div class="bg_documentario"></div>
+			<div class="bg_colabore"></div>
+		</section>
 
 		<!-- BEGIN video -->
 		<section class="block_wpr home_cntt">

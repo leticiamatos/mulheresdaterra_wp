@@ -23,6 +23,13 @@ body{
   -o-transition:@transition;
   -ms-transition:@transition;
 }
+.transition_fast (@transition:0.1s){
+  transition:@transition;
+  -moz-transition:@transition;
+  -webkit-transition:@transition;
+  -o-transition:@transition;
+  -ms-transition:@transition;
+}
 .transition2 (@transition:1s){
   transition:@transition;
   -moz-transition:@transition;
@@ -592,7 +599,7 @@ a:hover, .btn:hover{
     }
   }
   section.block_map{ background-size: 100%;}
-  #bgsection.as-mulheres{
+  #bgsection .bg_as-mulheres{
     background: url(../img/bg-mulheres-400.jpg) top center;
   }
   section.block_as-mulheres{
@@ -604,7 +611,7 @@ a:hover, .btn:hover{
     background-size: 100%;
     height: 270px;
   }
-  #bgsection.documentario {
+  #bgsection .bg_documentario {
     background: url(../img/bg-documentario-400.jpg) top center;
   }
   section.block_documentario{
@@ -617,7 +624,7 @@ a:hover, .btn:hover{
       //color: #fff !important;
     }
   }
-  #bgsection.colabore{
+  #bgsection .bg_colabore{
     background: url(../img/bg-colabore-400.jpg) top center;
   }
   section.block_colabore{
@@ -633,25 +640,25 @@ a:hover, .btn:hover{
       padding-right: 30px;
     }
   }
-  #bgsection.as-mulheres,
-  #bgsection.documentario,
-  #bgsection.colabore{
+  #bgsection .bg_as-mulheres,
+  #bgsection .bg_documentario,
+  #bgsection .bg_colabore{
     background-position: right;
   }
   body.vertical {
-    #bgsection.as-mulheres {
+    #bgsection .bg_as-mulheres {
       background: url(../img/bg-mulheres-400v.jpg) center top;
     }
-    #bgsection.documentario {
+    #bgsection .bg_documentario {
       background: url(../img/bg-documentario-400v.jpg) center top;
     }
-    #bgsection.colabore{
+    #bgsection .bg_colabore{
       background: url(../img/bg-colabore-400v.jpg) right top;
     }
   }
 }
 @media screen and (min-width: 400px) and (max-width: 700px){
-  #bgsection.as-mulheres{
+  #bgsection .bg_as-mulheres {
     background: url(../img/bg-mulheres-800.jpg) center;
   }
   section.block_as-mulheres{
@@ -678,7 +685,7 @@ a:hover, .btn:hover{
   section.block_quote blockquote{
     margin: 0 30px 10px;
   }
-  #bgsection.documentario {
+  #bgsection .bg_documentario {
     background: url(../img/bg-documentario-800.jpg) center;
   }
   section.block_documentario{
@@ -691,7 +698,7 @@ a:hover, .btn:hover{
       width: auto;
     }
   }
-  #bgsection.colabore{
+  #bgsection .bg_colabore{
     background: url(../img/bg-colabore-800.jpg) right center;
   }
   section.block_colabore{
@@ -709,19 +716,19 @@ a:hover, .btn:hover{
   }
 
   body.vertical {
-    #bgsection.as-mulheres{
+    #bgsection .bg_as-mulheres {
       background: url(../img/bg-mulheres-800v.jpg) center top;
     }
-    #bgsection.documentario {
+    #bgsection .bg_documentario {
       background: url(../img/bg-documentario-800v.jpg) center top;
     }
-    #bgsection.colabore {
+    #bgsection .bg_colabore {
       background: url(../img/bg-colabore-800v.jpg) right top;
     }
   }
 }
 @media screen and (min-width: 701px) and (max-width: 900px){
-  #bgsection.as-mulheres{
+  #bgsection .bg_as-mulheres {
     background: url(../img/bg-mulheres-800.jpg) center;
   }
   section.block_as-mulheres{
@@ -753,7 +760,7 @@ a:hover, .btn:hover{
   section.block_quote blockquote{
     margin: 0 30px 10px;
   }
-  #bgsection.documentario {
+  #bgsection .bg_documentario {
     background: url(../img/bg-documentario-800.jpg) center;
   }
   section.block_documentario{
@@ -766,7 +773,7 @@ a:hover, .btn:hover{
       width: auto;
     }
   }
-  #bgsection.colabore{
+  #bgsection .bg_colabore{
     background: url(../img/bg-colabore-800.jpg) right center;
   }
   section.block_colabore{
@@ -783,10 +790,10 @@ a:hover, .btn:hover{
     width: 140px;
   }
   body.vertical {
-    #bgsection.as-mulheres{
+    #bgsection .bg_as-mulheres {
       background: url(../img/bg-mulheres-800v.jpg) center top;
     }
-    #bgsection.documentario {
+    #bgsection .bg_documentario {
       background: url(../img/bg-documentario-800v.jpg) center top;
     }
     section.block_documentario {
@@ -799,7 +806,7 @@ a:hover, .btn:hover{
         line-height: 30px;
       }
     }
-    #bgsection.colabore{
+    #bgsection .bg_colabore{
       background: url(../img/bg-colabore-800v.jpg) right top;
     }
     section.block_colabore {
@@ -811,52 +818,52 @@ a:hover, .btn:hover{
     }
   }
   body.vertical {
-    #bgsection.as-mulheres{
+    #bgsection .bg_as-mulheres {
       background: url(../img/bg-mulheres-800v.jpg) center top;
     }
-    #bgsection.documentario {
+    #bgsection .bg_documentario {
       background: url(../img/bg-documentario-800v.jpg) center top;
     }
-    #bgsection.colabore {
+    #bgsection .bg_colabore {
       background: url(../img/bg-colabore-800v.jpg) right top;
     }
   }
 }
 @media screen and (min-width: 901px){
-  #bgsection.as-mulheres{
+  #bgsection .bg_as-mulheres {
     background: url(../img/bg-mulheres.jpg) center;
   }
-  #bgsection.documentario {
+  #bgsection .bg_documentario {
     background: url(../img/bg-documentario.jpg) center;
   }
-  #bgsection.colabore{
+  #bgsection .bg_colabore{
     background: url(../img/bg-colabore.jpg) right top;
   }
   body.vertical {
-    #bgsection.as-mulheres{
+    #bgsection .bg_as-mulheres {
       background: url(../img/bg-mulheres-800v.jpg) center top;
     }
-    #bgsection.documentario {
+    #bgsection .bg_documentario {
       background: url(../img/bg-documentario-800v.jpg) center top;
     }
-    #bgsection.colabore {
+    #bgsection .bg_colabore {
       background: url(../img/bg-colabore-800v.jpg) right top;
     }
   }
 }
-  #bgsection.reach_top{
+  #bgsection .reach_top{
     background-color: #fff;
     background-image: none;
   }
-  #bgsection.as-mulheres,
-  #bgsection.documentario,
-  #bgsection.colabore{
-    background-size:  auto 100%;
+  #bgsection .bg_as-mulheres,
+  #bgsection .bg_documentario,
+  #bgsection .bg_colabore{
+    background-size:  auto 100% ;
   }
   body.vertical{
-    #bgsection.as-mulheres,
-    #bgsection.documentario,
-    #bgsection.colabore{
+    #bgsection .bg_as-mulheres,
+    #bgsection .bg_documentario,
+    #bgsection .bg_colabore{
       background-size: 100% auto ;
     }
   }
@@ -867,13 +874,37 @@ a:hover, .btn:hover{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
+
+    div{
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .transition_fast;
+    }
     // z-index: 30;
   }
-  // #bgsection.colabore{
+  #bgsection.as-mulheres {
+    .bg_as-mulheres { opacity: 1 !important; }
+  }
+  #bgsection.documentario {
+    .bg_documentario { opacity: 1 !important; }
+  }
+  #bgsection.colabore {
+    .bg_colabore { opacity: 1 !important; }
+  }
+  #bgsection.reach_top div{
+    opacity: 1 !important;
+  }
+
+
+  // #bgsection .bg_colabore{
   //   background: #0f0;
   // }
-  // #bgsection.documentario{
+  // #bgsection .bg_documentario{
   //   background: #555;
   // }
   // #bgsection.as_mulheres{
@@ -1066,3 +1097,71 @@ a:hover, .btn:hover{
   }
   .accordeon-title{ display: none;}
 }
+
+.block_cntt{
+  //background: #f00 !important;
+  z-index: 2;
+}
+
+// Ipad Hack
+@media only screen and (device-width: 768px) {
+  /* iPad screen size rules */
+  #bgsection {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and 
+(max-device-width: 1024px) and (orientation:portrait) {
+  .block_as-mulheres,
+  .block_documentario,
+  .block_colabore{
+    background-size: 100% auto;
+  }
+  /* Portrait iPad display */
+  .block_as-mulheres{
+    background-image: url(../img/bg-mulheres-800v.jpg)
+  }
+  .block_documentario{
+    background-image: url(../img/bg-documentario-800v.jpg)
+  }
+  .block_colabore{
+    background-image: url(../img/bg-colabore-800v.jpg)
+  }
+  section.home_cntt .video_wpr{
+      height: 432px;
+    video{
+      height: 432px;
+    }
+  } 
+}
+
+@media only screen and (min-device-width: 481px) and 
+(max-device-width: 1024px) and (orientation:landscape) {
+  section.home_cntt .video_wpr{
+      height: 576px;
+    video{
+      height: 576px;
+    }
+  } 
+  .block_as-mulheres,
+  .block_documentario,
+  .block_colabore{
+    background-size: auto 100%;
+  }
+  .block_colabore{
+    background-position: right top;
+  }
+  /* Landscape iPad display */
+  .block_as-mulheres{
+    background-image: url(../img/bg-mulheres-800.jpg)
+  }
+  .block_documentario{
+    background-image: url(../img/bg-documentario-800.jpg)
+  }
+  .block_colabore{
+    background-image: url(../img/bg-colabore-800.jpg)
+  }
+}
+
+
