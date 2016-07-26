@@ -1,0 +1,387 @@
+section.block_map{
+
+  // map-box top left
+  .country-alemanha,
+  .country-brasil,
+  .country-bolivia,
+  .country-colombia,
+  .country-costa-rica,
+  .country-egito,
+  .country-espanha,
+  .country-estados-unidos,
+  .country-guatemala,
+  .country-haiti,
+  .country-india,
+  .country-inglaterra,
+  .country-marrocos,
+  .country-mexico,
+  .country-nepal,
+  .country-paquistao,
+  .country-peru,
+  .country-uganda{
+    .map-box{
+      background: url(../img/map-box_top-left.png) top center no-repeat;
+      top:-36px;
+      left: 25px
+    }
+  }
+  // map-box bottom left
+  .country-argentina,
+  .country-chile{
+    .map-box{
+      background: url(../img/map-box_bottom-left.png) top center no-repeat;
+      bottom:-17px;
+      left: 25px;
+    }
+  }
+  // map-box top right
+  .country-tailandia{
+    .map-box{
+      background: url(../img/map-box_top-right.png) top center no-repeat;
+      top:-36px;
+      right: 25px;
+    }
+  }
+  // map-box bottom right
+  .country-australia,
+  .country-nova-zelandia{
+    .map-box{
+      background: url(../img/map-box_bottom-right.png) top center no-repeat;
+      bottom:-17px;
+      right: 25px;
+    }
+  }
+
+  // Países - bullet positions X/Y
+  .country-alemanha{
+    left: 460px;
+    top: 220px;
+  }
+  .country-argentina{
+    left: 245px;
+    top: 545px;
+  }
+  .country-australia{
+    left: 830px;
+    top: 465px;
+  }
+  .country-bolivia{
+    left: 245px;
+    top: 480px;
+  }
+  .country-brasil{
+    left: 285px;
+    top: 445px;
+  }
+  .country-chile{
+    left: 225px;
+    top: 505px;
+  }
+  .country-colombia{
+    left: 205px;
+    top: 390px;
+  }
+  .country-costa-rica{
+    left: 180px;
+    top: 370px;
+  }
+  .country-egito{
+    left: 520px;
+    top: 325px;
+  }
+  .country-espanha{
+    left: 420px;
+    top: 270px;
+  }
+  .country-estados-unidos{
+    left: 120px;
+    top: 240px;
+  }
+  .country-guatemala{
+    left: 140px;
+    top: 345px;
+  }
+  .country-haiti{
+    left: 225px;
+    top: 340px;
+  }
+  .country-india{
+    left: 670px;
+    top: 340px;
+  }
+  .country-inglaterra{
+    left: 410px;
+    top: 210px;
+  }
+  .country-marrocos{
+    left: 420px;
+    top: 315px;
+  }
+  .country-mexico{
+    left: 120px;
+    top: 305px;
+  }
+  .country-nepal{
+    left: 695px;
+    top: 295px;
+  }
+  .country-nova-zelandia{
+    left: 945px;
+    top: 540px;
+  }
+  .country-paquistao{
+    left: 650px;
+    top: 300px;
+  }
+  .country-peru{
+    left: 200px;
+    top: 430px;
+  }
+  .country-tailandia{
+    left: 745px;
+    top: 335px;
+  }
+  .country-uganda{
+    left: 520px;
+    top: 405px;
+  }
+
+  // Type of box
+}
+
+// Mapa menor quando versão mobile - Responsivo da Galeria
+@media screen and (max-width: 700px){
+  // Galeria BGs Mapa
+//   body.galeria{
+//     background-color: #f0f0f0;
+//     background-repeat: no-repeat;
+//     background-image: url(../img/map_nobg-800.gif);
+//   }
+
+//   body.galeria.alemanha,
+//   body.galeria.espanha,
+//   body.galeria.inglaterra{
+//     background-position: 54% -454px;
+//   }
+//   body.galeria.egito,
+//   body.galeria.uganda{
+//     background-position: 70% 60px;
+//   }
+//   body.galeria.argentina,
+//   body.galeria.chile,
+//   body.galeria.bolivia,
+//   body.galeria.peru,
+//   body.galeria.colombia{
+//     background-position: 1% -20px;
+//   }
+//   body.galeria.brasil{
+//     background-position: 35% -20px;
+//   }
+//   body.galeria.costa-rica,
+//   body.galeria.haiti,
+//   body.galeria.guatemala,
+//   body.galeria.mexico,
+//   body.galeria.marrocos,
+//   body.galeria.estados-unidos{
+//     background-position: 8% 100px;
+//   }
+//   body.galeria.paquistao,
+//   body.galeria.india,
+//   body.galeria.nepal,
+//   body.galeria.tailandia{
+//     background-position: 104% 100px;
+//   }
+//   body.galeria.australia,
+//   body.galeria.nova-zelandia{
+//     background-position: 128% -80px;
+//   }
+  
+  body.galeria{
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center -160px;
+  }
+  body.galeria.vertical{
+    background-position: center -50px;
+  }
+  body.galeria .block_article .page_title{
+    padding-top: 130px !important;
+    padding-bottom: 100px !important;
+  }
+  
+  //Top Center
+  body.inglaterra,
+  body.alemanha{
+    background-image: url(../img/mapa-inglaterra.gif);
+  }
+
+  body.estados-unidos{
+    background-image: url(../img/mapa-eua.gif);
+  }
+  // Center Left
+  body.mexico,
+  body.costa-rica,
+  body.haiti,
+  body.guatemala,
+  body.colombia{
+    background-image: url(../img/mapa-guatemala.gif);
+  }
+
+  // Center Center
+  body.espanha,
+  body.egito,
+  body.marrocos{
+    background-image: url(../img/mapa-egito.gif);
+  }
+
+  // Rigt Center
+  body.tailandia,
+  body.india,
+  body.paquistao,
+  body.nepal{
+    background-image: url(../img/mapa-nepal.gif);
+  }
+
+  // Bottom lefft
+  body.chile,
+  body.argentina,
+  body.brasil,
+  body.bolivia,
+  body.peru{
+    background-image: url(../img/mapa-brasil.gif);
+  }
+
+  // Bottom Center
+  body.uganda{
+    background-image: url(../img/mapa-uganda.gif);
+  }
+
+  //Bottom right
+  body.australia,
+  body.nova-zelandia{
+    background-image: url(../img/mapa-australia.gif);
+  }
+}
+@media screen and (min-width: 701px) and (max-width:1030px){
+  body.galeria{
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center -160px;
+  }
+  body.galeria.vertical{
+    background-position: center top;
+  }
+  body.galeria .block_article .page_title{
+    padding-top: 130px !important;
+    padding-bottom: 100px !important;
+  }
+  
+  //Top Center
+  body.inglaterra,
+  body.alemanha{
+    background-image: url(../img/mapa-inglaterra-800.gif);
+  }
+
+  body.estados-unidos{
+    background-image: url(../img/mapa-eua-800.gif);
+  }
+  // Center Left
+  body.mexico,
+  body.costa-rica,
+  body.haiti,
+  body.guatemala,
+  body.colombia{
+    background-image: url(../img/mapa-guatemala-800.gif);
+  }
+
+  // Center Center
+  body.espanha,
+  body.egito,
+  body.marrocos{
+    background-image: url(../img/mapa-egito-800.gif);
+  }
+
+  // Rigt Center
+  body.tailandia,
+  body.india,
+  body.paquistao,
+  body.nepal{
+    background-image: url(../img/mapa-nepal-800.gif);
+  }
+
+  // Bottom lefft
+  body.chile,
+  body.argentina,
+  body.brasil,
+  body.bolivia,
+  body.peru{
+    background-image: url(../img/mapa-brasil-800.gif);
+  }
+
+  // Bottom Center
+  body.uganda{
+    background-image: url(../img/mapa-uganda-800.gif);
+  }
+
+  //Bottom right
+  body.australia,
+  body.nova-zelandia{
+    background-image: url(../img/mapa-australia-800.gif);
+  }
+}
+@media screen and (min-width: 1031px){
+  // Galeria BGs Mapa
+  body.galeria{
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-image: url(../img/map_nobg.gif);
+    background-size: 150%;
+  }
+
+  body.galeria.alemanha,
+  body.galeria.espanha,
+  body.galeria.inglaterra{
+    background-position: 54% -54px;
+  }
+  body.galeria.argentina,
+  body.galeria.chile{
+    background-position: 10% -599px;
+  }
+  body.galeria.australia,
+  body.galeria.uganda{
+    background-position: 130% -490px;
+  }
+  body.galeria.bolivia,
+  body.galeria.peru,
+  body.galeria.colombia{
+    background-position: -5% -450px;
+  }
+  body.galeria.brasil{
+    background-position: 35% -420px;
+  }
+  body.galeria.costa-rica,
+  body.galeria.haiti,
+  body.galeria.guatemala,
+  body.galeria.mexico,
+  body.galeria.marrocos{
+    background-position: 8% -263px;
+  }
+  body.galeria.egito,
+  body.galeria.paquistao,
+  body.galeria.india{
+    background-position: 88% -250px;
+  }
+  body.galeria.estados-unidos{
+    background-position: 8% -60px;
+  }
+  body.galeria.nepal,
+  body.galeria.tailandia{
+    background-position: 125% 10px;
+  }
+  body.galeria.nova-zelandia{
+    background-position: 135% -670px;
+  }
+
+}
